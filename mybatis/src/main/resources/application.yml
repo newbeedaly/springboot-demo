@@ -1,0 +1,18 @@
+server:
+    port: 10007
+    servlet:
+        context-path: /
+
+#公共配置与profiles选择无关
+#mybatis:
+    #typeAliasesPackage: cn.newbeedaly.mybatis.bean
+    #mapperLocations: classpath:mapper/*.xml
+
+spring.datasource:
+    url: jdbc:mysql://localhost:3306/mybatis?useUnicode=true&&characterEncoding=UTF-8&connectTimeout=10000
+    username: root
+    password: xxxx
+    driver-class-name: com.mysql.jdbc.Driver
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+
